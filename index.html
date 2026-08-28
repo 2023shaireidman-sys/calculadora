@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Científica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="calculator">
+
+        <div class="header">
+            <h1>Calculadora Científica</h1>
+        </div>
+
+        <div class="display">
+            <div id="operation"></div>
+            <div id="result">0</div>
+        </div>
+
+        <div class="buttons">
+
+            <!-- Funciones científicas -->
+            <button onclick="calculateFunction('sin')">sin</button>
+            <button onclick="calculateFunction('cos')">cos</button>
+            <button onclick="calculateFunction('tan')">tan</button>
+            <button onclick="calculateFunction('sqrt')">√</button>
+            <button onclick="calculateFunction('log')">log</button>
+
+            <button onclick="calculateFunction('ln')">ln</button>
+            <button onclick="calculateFunction('square')">x²</button>
+            <button onclick="calculateFunction('power')">xʸ</button>
+            <button onclick="addValue('π')">π</button>
+            <button onclick="addValue('(')">(</button>
+
+            <!-- Números -->
+            <button onclick="clearCalculator()" class="clear">AC</button>
+            <button onclick="deleteLast()">⌫</button>
+            <button onclick="addValue('%')">%</button>
+            <button onclick="addValue('/')">÷</button>
+            <button onclick="addValue('7')">7</button>
+
+            <button onclick="addValue('8')">8</button>
+            <button onclick="addValue('9')">9</button>
+            <button onclick="addValue('*')">×</button>
+            <button onclick="addValue('4')">4</button>
+            <button onclick="addValue('5')">5</button>
+
+            <button onclick="addValue('6')">6</button>
+            <button onclick="addValue('-')">−</button>
+            <button onclick="addValue('1')">1</button>
+            <button onclick="addValue('2')">2</button>
+            <button onclick="addValue('3')">3</button>
+
+            <button onclick="addValue('+')">+</button>
+            <button onclick="addValue('0')" class="zero">0</button>
+            <button onclick="addValue('.')">.</button>
+            <button onclick="calculate()" class="equals">=</button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
